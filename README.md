@@ -7,23 +7,42 @@
 ## Install
 
 ```bash
-npm install --save react-modal-zarconoshrnet
+npm install i react-modal-zarconoshrnet
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
 
-import MyComponent from 'react-modal-zarconoshrnet'
-import 'react-modal-zarconoshrnet/dist/index.css'
+import React, { useState } from 'react';
+import Modal from 'react-modal-zarconoshrnet';
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  return (
+    <div>
+      <button onClick={openModal}>Open Modal</button>
+      </Modal onClose={closeModal} options={{ closeText: 'x' }}>
+    </div>
+  );
 }
+
+export default App;
 ```
+Le composant <Modal> accepte les props suivantes :
+
+- isOpen : booléen indiquant si la modale est ouverte
+- onClose : fonction pour fermer la modale
+- children : contenu à afficher dans la modale
 
 ## License
 
