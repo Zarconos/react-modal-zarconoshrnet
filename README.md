@@ -59,8 +59,8 @@ export default App;
 
 ## Props
 
-onClose: A function to be called when the modal is closed.
-options: An object containing additional options for customizing the modal. Currently supports closeText option for customizing the close button text.
+- onClose: A function to be called when the modal is closed.
+- options: An object containing additional options for customizing the modal. Currently supports closeText option for customizing the close button text.
 
 ## License
 
