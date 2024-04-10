@@ -1,6 +1,6 @@
 # react-modal-zarconoshrnet
 
-> Made with create-react-library
+> hrnet-modal-zarconos is a simple and customizable modal component for React applications.
 
 [![NPM](https://img.shields.io/npm/v/react-modal-zarconoshrnet.svg)](https://www.npmjs.com/package/react-modal-zarconoshrnet) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -12,10 +12,12 @@ npm install i react-modal-zarconoshrnet
 
 ## Usage
 
-```jsx
+Import the Modal component into your React application and use it as follows:
 
+
+```jsx
 import React, { useState } from 'react';
-import Modal from 'react-modal-zarconoshrnet';
+import Modal from 'hrnet-modal-zarconos';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -31,19 +33,23 @@ function App() {
   return (
     <div>
       <button onClick={openModal}>Open Modal</button>
-      </Modal onClose={closeModal} options={{ closeText: 'x' }}>
+      <Modal onClose={closeModal} options={{ closeText: 'x' }}>
+        <div>Modal Content Goes Here</div>
+      </Modal>
     </div>
   );
 }
 
 export default App;
 ```
-Le composant <Modal> accepte les props suivantes :
 
-- isOpen : booléen indiquant si la modale est ouverte
-- onClose : fonction pour fermer la modale
-- children : contenu à afficher dans la modale
+## Props
+
+- onClose: A function to be called when the modal is closed.
+
+- options: An object containing additional options for customizing the modal. Currently supports closeText option for customizing the close button text.
 
 ## License
 
+This project is licensed under the MIT License - see the LICENSE file for details.
 MIT © [Zarconos](https://github.com/Zarconos)
