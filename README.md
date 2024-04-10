@@ -4,6 +4,15 @@
 
 [![NPM](https://img.shields.io/npm/v/react-modal-zarconoshrnet.svg)](https://www.npmjs.com/package/react-modal-zarconoshrnet) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+
+## Prerequisites
+
+Node.js version 10 or higher
+
+## Recommended Text Editor
+
+Visual Studio Code
+
 ## Install
 
 ```bash
@@ -43,13 +52,18 @@ function App() {
 export default App;
 ```
 
+## Example Usage
+
+![Modal Screenshot](src/asset/modal.pNG)
+
+
 ## Props
 
-- onClose: A function to be called when the modal is closed.
-
-- options: An object containing additional options for customizing the modal. Currently supports closeText option for customizing the close button text.
+onClose: A function to be called when the modal is closed.
+options: An object containing additional options for customizing the modal. Currently supports closeText option for customizing the close button text.
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 MIT © [Zarconos](https://github.com/Zarconos)
+
