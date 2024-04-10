@@ -54,7 +54,7 @@ export default App;
 
 ## Example Usage
 
-![Modal Screenshot](src/asset/modal.pNG)
+![Alt text](https://image.noelshack.com/fichiers/2024/15/4/1712790827-modal.png "Modal")
 
 
 ## Props
