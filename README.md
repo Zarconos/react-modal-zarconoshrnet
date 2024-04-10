@@ -54,15 +54,16 @@ export default App;
 
 ## Example Usage
 
-![Modal Screenshot](src/asset/modal.pNG)
+![Alt text](https://image.noelshack.com/fichiers/2024/15/4/1712790827-modal.png "Modal")
 
 
 ## Props
 
-onClose: A function to be called when the modal is closed.
-options: An object containing additional options for customizing the modal. Currently supports closeText option for customizing the close button text.
+- onClose: A function to be called when the modal is closed.
+- options: An object containing additional options for customizing the modal. Currently supports closeText option for customizing the close button text.
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 MIT © [Zarconos](https://github.com/Zarconos)
+

@@ -1,6 +1,6 @@
 {
   "name": "react-modal-zarconoshrnet",
-  "version": "1.0.5",
+  "version": "1.0.2",
   "description": "Modal component for react",
   "author": "Zarconos",
   "license": "MIT",
@@ -8,11 +8,7 @@
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
-  "keywords": [
-    "react",
-    "modal",
-    "library"
-  ],
+  "keywords": ["react", "modal", "library"],
   "engines": {
     "node": ">=10"
   },

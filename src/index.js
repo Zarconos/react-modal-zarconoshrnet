@@ -2,35 +2,6 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import './styles.module.css';
 
-
-/*
-Le composant Modal est une composante React utilisée pour afficher des fenêtres modales dans une application web. Il offre une manière simple et personnalisable d'afficher des contenus supplémentaires ou des messages d'alerte à l'utilisateur sans quitter la page actuelle.
-
-### Fonctionnalités principales :
-- Affichage d'une fenêtre modale contenant du contenu fourni par l'utilisateur.
-- Personnalisation de l'apparence et du comportement de la fenêtre modale.
-- Gestion de la fermeture de la fenêtre modale à l'aide d'un bouton de fermeture ou en cliquant en dehors de la fenêtre.
-- Prise en charge de la touche Escape pour fermer la fenêtre modale.
-
-### Utilisation :
-Le composant Modal peut être intégré dans n'importe quelle application React en important simplement le composant et en le plaçant là où vous souhaitez afficher la fenêtre modale. Il prend en charge des options de personnalisation telles que le texte du bouton de fermeture et le texte du modal lui-même.
-
-### Propriétés :
-- `onClose`: Fonction requise appelée lors de la fermeture de la fenêtre modale.
-- `content`: Contenu requis à afficher dans la fenêtre modale.
-- `options`: Objet optionnel permettant de personnaliser le comportement et l'apparence de la fenêtre modale, notamment le texte du bouton de fermeture et le texte du modal lui-même.
-
-### Exemple d'utilisation :
-
-```jsx
-<Modal
-  onClose={handleClose}
-  content={<div>Contenu de la fenêtre modale</div>}
-  options={{ closeText: 'Fermer', modalText: 'Titre de la fenêtre modale' }}
-/>
-*/
-
-
 const Modal = ({ onClose, content, options }) => {
   // State pour suivre l'état d'ouverture du modal
   const [isModalOpen, setIsModalOpen] = useState(true);
