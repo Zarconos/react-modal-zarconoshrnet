@@ -39,17 +39,28 @@ function App() {
     setIsModalOpen(false);
   };
 
+const modalContent = <div id="confirmation" className="modal-text">Success</div>;
+
   return (
     <div>
       <button onClick={openModal}>Open Modal</button>
-      <Modal onClose={closeModal} options={{ closeText: 'x' }}>
-        <div>Modal Content Goes Here</div>
-      </Modal>
+    {isModalOpen && (
+      <Modal onClose={closeModal} content={modalContent} options={{ closeText: 'x', modalText: 'Custom Text Here' }} />
+    )}
     </div>
   );
 }
 
 export default App;
+
+```
+
+## Styles
+
+```jsx
+
+import 'react-modal-zarconoshrnet/dist/index.css'
+
 ```
 
 ## Example Usage
@@ -59,8 +70,15 @@ export default App;
 
 ## Props
 
-- onClose: A function to be called when the modal is closed.
-- options: An object containing additional options for customizing the modal. Currently supports closeText option for customizing the close button text.
+The Modal component accepts the following props:
+
+- `onClose`: A function to be called when the modal is closed. **Required**.
+- `content`: The content of the modal. This can be a React element or any valid JSX. **Required**.
+- `options`: An object containing additional options for customizing the modal.
+- `closeText`: The text for the close button. **Required**.
+- `modalText`: Optional text for the modal itself.
+
+These props allow you to customize the behavior and appearance of the Modal component according to your needs.
 
 ## License
 
