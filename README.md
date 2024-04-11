@@ -26,7 +26,7 @@ Import the Modal component into your React application and use it as follows:
 
 ```jsx
 import React, { useState } from 'react';
-import Modal from 'hrnet-modal-zarconos';
+import Modal from 'react-modal-zarconoshrnet';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
